@@ -6,6 +6,16 @@
   gap: 40px;
   background-color: var(--color-accent-gold);
   padding: 100px 120px;
+
+  @media (max-width: 1024px) {
+    padding: 60px 48px;
+    gap: 32px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 48px 24px;
+    gap: 24px;
+  }
 }
 
 .title {
@@ -15,6 +25,10 @@
   color: #FFFFFF;
   max-width: 800px;
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
 }
 
 .subtitle {
@@ -26,6 +40,10 @@
   color: var(--color-bg-light-cream);
   max-width: 700px;
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .button {
@@ -43,6 +61,11 @@
   &:hover {
     opacity: 0.9;
   }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 14px 32px;
+  }
 }
 
 .trust {
@@ -51,4 +74,8 @@
   font-weight: 400;
   text-align: center;
   color: var(--color-bg-light-cream);
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }

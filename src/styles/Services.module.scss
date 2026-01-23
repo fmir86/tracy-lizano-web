@@ -6,6 +6,16 @@
   gap: 60px;
   background-color: var(--color-bg-white);
   padding: 100px 120px;
+
+  @media (max-width: 1024px) {
+    padding: 60px 48px;
+    gap: 48px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 48px 24px;
+    gap: 32px;
+  }
 }
 
 .header {
@@ -22,6 +32,10 @@
   text-align: center;
   color: var(--color-text-dark);
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
 }
 
 .subtitle {
@@ -32,6 +46,10 @@
   text-align: center;
   color: var(--color-text-secondary);
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .grid {
@@ -49,10 +67,24 @@
   background-color: var(--color-bg-cream);
   padding: 48px;
   border-radius: 8px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    padding: 32px;
+    gap: 24px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 24px;
+  }
 }
 
 .cardReverse {
   flex-direction: row-reverse;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 }
 
 .cardContent {
@@ -60,6 +92,10 @@
   flex-direction: column;
   gap: 20px;
   flex: 1;
+
+  @media (max-width: 1024px) {
+    order: 2;
+  }
 }
 
 .cardTitle {
@@ -68,6 +104,10 @@
   font-weight: 500;
   color: var(--color-text-dark);
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 .cardDesc {
@@ -77,6 +117,10 @@
   line-height: 1.7;
   color: var(--color-text-secondary);
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 }
 
 .cardImage {
@@ -86,4 +130,10 @@
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: 200px;
+    order: 1;
+  }
 }

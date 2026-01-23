@@ -4,6 +4,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 24px 120px;
+
+  @media (max-width: 768px) {
+    padding: 16px 24px;
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 .logo {
@@ -11,12 +17,22 @@
   font-size: 36px;
   font-style: italic;
   color: var(--color-text-dark);
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
 }
 
 .nav {
   display: flex;
   align-items: center;
   gap: 48px;
+
+  @media (max-width: 768px) {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .navLink {
@@ -30,6 +46,10 @@
 
   &:hover {
     opacity: 0.8;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
   }
 }
 
@@ -47,5 +67,10 @@
 
   &:hover {
     opacity: 0.9;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 10px 20px;
   }
 }

@@ -5,6 +5,17 @@
   gap: 80px;
   background-color: var(--color-bg-light-cream);
   padding: 100px 120px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    padding: 60px 48px;
+    gap: 48px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 48px 24px;
+    gap: 32px;
+  }
 }
 
 .aboutImage {
@@ -14,6 +25,17 @@
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+  }
+
+  @media (max-width: 768px) {
+    height: 300px;
+    max-width: 100%;
+  }
 }
 
 .aboutContent {
@@ -21,6 +43,14 @@
   flex-direction: column;
   gap: 28px;
   flex: 1;
+
+  @media (max-width: 1024px) {
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
 }
 
 .title {
@@ -28,6 +58,10 @@
   font-size: 48px;
   color: var(--color-text-dark);
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
 }
 
 .paragraph {
@@ -37,4 +71,8 @@
   line-height: 1.7;
   color: var(--color-text-secondary);
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }

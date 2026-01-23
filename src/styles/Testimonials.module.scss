@@ -6,6 +6,16 @@
   gap: 60px;
   background-color: var(--color-bg-white);
   padding: 100px 120px;
+
+  @media (max-width: 1024px) {
+    padding: 60px 48px;
+    gap: 48px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 48px 24px;
+    gap: 32px;
+  }
 }
 
 .header {
@@ -22,12 +32,21 @@
   text-align: center;
   color: var(--color-text-dark);
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
 }
 
 .grid {
   display: flex;
   gap: 32px;
   width: 100%;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 24px;
+  }
 }
 
 .card {
@@ -38,6 +57,11 @@
   background-color: var(--color-bg-cream);
   padding: 40px;
   border-radius: 8px;
+
+  @media (max-width: 768px) {
+    padding: 24px;
+    gap: 16px;
+  }
 }
 
 .quote {
@@ -48,6 +72,10 @@
   line-height: 1.6;
   color: var(--color-text-dark);
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .author {
@@ -55,4 +83,8 @@
   font-size: 15px;
   font-weight: 600;
   color: var(--color-text-secondary);
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
