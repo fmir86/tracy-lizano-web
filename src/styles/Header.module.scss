@@ -1,0 +1,51 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 120px;
+}
+
+.logo {
+  font-family: "Bodoni Moda", serif;
+  font-size: 36px;
+  font-style: italic;
+  color: var(--color-text-dark);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.navLink {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: opacity 0.2s;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.ctaButton {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--color-accent-gold);
+  color: #FFFFFF;
+  padding: 12px 28px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

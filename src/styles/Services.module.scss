@@ -1,0 +1,89 @@
+.services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  background-color: var(--color-bg-white);
+  padding: 100px 120px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 700px;
+}
+
+.title {
+  font-family: "Crimson Pro", serif;
+  font-size: 48px;
+  text-align: center;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  background-color: var(--color-bg-cream);
+  padding: 48px;
+  border-radius: 8px;
+}
+
+.cardReverse {
+  flex-direction: row-reverse;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.cardTitle {
+  font-family: "Crimson Pro", serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.cardDesc {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.cardImage {
+  width: 340px;
+  height: 280px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}

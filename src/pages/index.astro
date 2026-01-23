@@ -1,0 +1,168 @@
+---
+import '../styles/global.css';
+import headerStyles from '../styles/Header.module.scss';
+import heroStyles from '../styles/Hero.module.scss';
+import servicesStyles from '../styles/Services.module.scss';
+import aboutStyles from '../styles/About.module.scss';
+import testimonialsStyles from '../styles/Testimonials.module.scss';
+import ctaStyles from '../styles/CTA.module.scss';
+import footerStyles from '../styles/Footer.module.scss';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Expert psychology consulting for leaders and organizations ready to transform workplace culture through emotional intelligence and innovation." />
+    <title>Tracy Lizano - Psychology Consulting</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400&family=Crimson+Pro:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body style="background-color: #FAF9F7; margin: 0;">
+    <!-- Header -->
+    <header class={headerStyles.header}>
+      <span class={headerStyles.logo}>Tracy Lizano</span>
+      <nav class={headerStyles.nav}>
+        <a href="#services" class={headerStyles.navLink}>Services</a>
+        <a href="#about" class={headerStyles.navLink}>About</a>
+        <a href="#contact" class={headerStyles.navLink}>Contact</a>
+        <button class={headerStyles.ctaButton}>Book a Consultation</button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class={heroStyles.hero}>
+      <div class={heroStyles.heroLeft}>
+        <h1 class={heroStyles.headline}>Lead with clarity.<br />Thrive with purpose.</h1>
+        <p class={heroStyles.subline}>Expert psychology consulting for leaders and organizations ready to transform workplace culture through emotional intelligence and innovation.</p>
+        <div class={heroStyles.ctas}>
+          <button class={heroStyles.primaryCta}>Start Your Journey</button>
+          <button class={heroStyles.secondaryCta}>Learn More</button>
+        </div>
+      </div>
+      <div
+        class={heroStyles.heroImage}
+        style="background-image: url('https://images.unsplash.com/photo-1698743383847-e6a6ea0cae74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjkxMzI5MDZ8&ixlib=rb-4.1.0&q=80&w=1080');"
+      ></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class={servicesStyles.services}>
+      <div class={servicesStyles.header}>
+        <h2 class={servicesStyles.title}>Areas of Expertise</h2>
+        <p class={servicesStyles.subtitle}>Specialized consulting services designed to unlock human potential and drive organizational excellence.</p>
+      </div>
+      <div class={servicesStyles.grid}>
+        <!-- Service 1 -->
+        <article class={servicesStyles.card}>
+          <div class={servicesStyles.cardContent}>
+            <h3 class={servicesStyles.cardTitle}>Corporate Culture Transformation</h3>
+            <p class={servicesStyles.cardDesc}>Building psychologically safe workplaces where teams feel valued, heard, and empowered to do their best work. Together we'll design cultural frameworks that align with your organization's values while fostering genuine connection and collaboration.</p>
+          </div>
+          <div
+            class={servicesStyles.cardImage}
+            style="background-image: url('https://images.unsplash.com/photo-1739292774739-ee38cd9a5735?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjkxMzI5MzB8&ixlib=rb-4.1.0&q=80&w=1080');"
+          ></div>
+        </article>
+
+        <!-- Service 2 -->
+        <article class={`${servicesStyles.card} ${servicesStyles.cardReverse}`}>
+          <div class={servicesStyles.cardContent}>
+            <h3 class={servicesStyles.cardTitle}>Leadership & Emotional Intelligence</h3>
+            <p class={servicesStyles.cardDesc}>Developing leaders who inspire trust and drive results through self-awareness and empathy. My approach helps executives and managers cultivate the emotional intelligence needed to navigate complexity, build resilient teams, and create lasting impact.</p>
+          </div>
+          <div
+            class={servicesStyles.cardImage}
+            style="background-image: url('https://images.unsplash.com/photo-1759262310978-59b8eb05969b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjkxMzI5MzV8&ixlib=rb-4.1.0&q=80&w=1080');"
+          ></div>
+        </article>
+
+        <!-- Service 3 -->
+        <article class={servicesStyles.card}>
+          <div class={servicesStyles.cardContent}>
+            <h3 class={servicesStyles.cardTitle}>Human Resources Psychology</h3>
+            <p class={servicesStyles.cardDesc}>Applying psychological principles to talent acquisition, retention, and development. From designing interview processes that reveal true potential to creating development programs that nurture growth, I help HR teams make decisions grounded in behavioral science and human understanding.</p>
+          </div>
+          <div
+            class={servicesStyles.cardImage}
+            style="background-image: url('https://images.unsplash.com/photo-1758518730162-09a142505bfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjkxMzI5NDJ8&ixlib=rb-4.1.0&q=80&w=1080');"
+          ></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class={aboutStyles.about}>
+      <div
+        class={aboutStyles.aboutImage}
+        style="background-image: url('https://images.unsplash.com/photo-1758518727600-2c5f48419eac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjkxMzMyNzl8&ixlib=rb-4.1.0&q=80&w=1080');"
+      ></div>
+      <div class={aboutStyles.aboutContent}>
+        <h2 class={aboutStyles.title}>A partner in your growth</h2>
+        <p class={aboutStyles.paragraph}>I'm Tracy Lizano, a psychologist dedicated to helping leaders and organizations discover what's possible when human potential meets intentional strategy.</p>
+        <p class={aboutStyles.paragraph}>My work bridges individual psychology and organizational systems. Whether I'm coaching an executive through a leadership transition or helping an HR team redesign their talent strategy, my approach is rooted in evidence-based psychology, deep listening, and a belief that sustainable change happens when people feel genuinely understood.</p>
+        <p class={aboutStyles.paragraph}>I work independently, which means you get focused, personalized attention tailored to your unique context. My clients range from startups building their first leadership teams to established companies reimagining their cultures for a new era.</p>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class={testimonialsStyles.testimonials}>
+      <div class={testimonialsStyles.header}>
+        <h2 class={testimonialsStyles.title}>What clients say</h2>
+      </div>
+      <div class={testimonialsStyles.grid}>
+        <article class={testimonialsStyles.card}>
+          <p class={testimonialsStyles.quote}>"Tracy helped us transform our approach to leadership development. Her insights into emotional intelligence and team dynamics were game-changing for our culture."</p>
+          <span class={testimonialsStyles.author}>Sarah Chen, VP of People Operations</span>
+        </article>
+        <article class={testimonialsStyles.card}>
+          <p class={testimonialsStyles.quote}>"Working with Tracy gave me the clarity and confidence I needed to lead through uncertainty. Her approach is both deeply human and strategically sound."</p>
+          <span class={testimonialsStyles.author}>Michael Rodriguez, Founder & CEO</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class={ctaStyles.cta}>
+      <h2 class={ctaStyles.title}>Ready to transform your leadership?</h2>
+      <p class={ctaStyles.subtitle}>Let's explore how psychology-driven consulting can help you build the culture and leadership your organization deserves.</p>
+      <button class={ctaStyles.button}>Schedule a Conversation</button>
+      <span class={ctaStyles.trust}>Free 30-minute consultation · No obligation</span>
+    </section>
+
+    <!-- Footer -->
+    <footer class={footerStyles.footer}>
+      <div class={footerStyles.top}>
+        <div class={footerStyles.brand}>
+          <span class={footerStyles.logo}>Tracy Lizano</span>
+          <p class={footerStyles.tagline}>Psychology consulting for leaders and organizations ready to thrive.</p>
+        </div>
+        <nav class={footerStyles.nav}>
+          <div class={footerStyles.column}>
+            <span class={footerStyles.columnTitle}>Services</span>
+            <a href="#" class={footerStyles.link}>Corporate Culture</a>
+            <a href="#" class={footerStyles.link}>Leadership Coaching</a>
+            <a href="#" class={footerStyles.link}>HR Psychology</a>
+          </div>
+          <div class={footerStyles.column}>
+            <span class={footerStyles.columnTitle}>Connect</span>
+            <a href="#" class={footerStyles.link}>LinkedIn</a>
+            <a href="#" class={footerStyles.link}>Email</a>
+            <a href="#" class={footerStyles.link}>Schedule Call</a>
+          </div>
+        </nav>
+      </div>
+      <div class={footerStyles.bottom}>
+        <span class={footerStyles.copyright}>© 2026 Tracy Lizano. All rights reserved.</span>
+        <div class={footerStyles.legal}>
+          <a href="#" class={footerStyles.legalLink}>Privacy Policy</a>
+          <a href="#" class={footerStyles.legalLink}>Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+.about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  background-color: var(--color-bg-light-cream);
+  padding: 100px 120px;
+}
+
+.aboutImage {
+  width: 480px;
+  height: 560px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  flex: 1;
+}
+
+.title {
+  font-family: "Crimson Pro", serif;
+  font-size: 48px;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.paragraph {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin: 0;
+}

@@ -1,0 +1,58 @@
+.testimonials {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  background-color: var(--color-bg-white);
+  padding: 100px 120px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.title {
+  font-family: "Crimson Pro", serif;
+  font-size: 48px;
+  text-align: center;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.grid {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+  background-color: var(--color-bg-cream);
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.quote {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.author {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}

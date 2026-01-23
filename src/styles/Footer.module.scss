@@ -1,0 +1,107 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background-color: var(--color-bg-dark);
+  padding: 80px 120px 40px 120px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+  width: 100%;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 320px;
+}
+
+.logo {
+  font-family: "Crimson Pro", serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--color-text-light);
+}
+
+.tagline {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 80px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.columnTitle {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-text-light);
+}
+
+.link {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-text-secondary);
+}
+
+.copyright {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.legal {
+  display: flex;
+  gap: 24px;
+}
+
+.legalLink {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
